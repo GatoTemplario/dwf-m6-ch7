@@ -7,11 +7,13 @@ app.listen(port, ()=>{
     console.log('listening on port: ' + port);
 })
 app.get("/users", (req, res)=>{
+    console.log("funca o no funca??");
     res.json({
         users:[]
     })
 })
 app.post("/users", (req, res)=>{
+    
     res.status(201).json({
         "message": "ok",
         "id":1234
